@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  local_db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ##패스워드 잘 입력
+      MYSQL_ROOT_PASSWORD: ## 패스워드 잘 입력하면됨
+      MYSQL_DATABASE: surpin_dev
+    volumes:
+      - ~/data/mariadb:/var/lib/mysql
+    ports:
+      - "33067:3306"
