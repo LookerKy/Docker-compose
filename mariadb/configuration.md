@@ -40,3 +40,6 @@ default-character-set = utf8
 [mysql]
 default-character-set = utf8
 ```
+
+## 참조
+[도커에 mysql 설치하기](https://kjwsx23.tistory.com/383)
